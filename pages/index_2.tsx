@@ -1,4 +1,4 @@
-import data from '../data'
+import data from '../data_2'
 import smoothscroll from 'smoothscroll-polyfill'
 import { useCallback,useEffect } from 'react'
 
@@ -22,14 +22,11 @@ export default function Home() {
                 <h1 className={'font-bold font-mono text-6xl m-2' +
                     // 文字颜色渐变
                     ' bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'
-                }>路况数据可视化</h1>
+                }>交通参与者数据可视化</h1>
                 <h5 className={'font-bold font-mono text-3xl m-2' +
                     // 文字颜色渐变
                     ' bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'
-                }>Road-Situation_Data-Visualization</h5>
-                <div className={'font-mono text-gray-200 mb-2'}>
-                    数媒 202-冯源濬
-                </div>
+                }>Traffic-Participant_Data-Visualization</h5>
                 <div
                     className={'border-t-2 border-b-2 border-dashed border-blue-200 min-h-3 grid grid-cols-5 gap-4 mx-6 py-5'}>
                     {
@@ -75,10 +72,10 @@ export default function Home() {
             <button className={'fixed bottom-10 right-40 cursor-pointer bg-blue-500 p-3 rounded-full'}
                     onClick={() => {
                         // 换成index_2.tsx页面
-                        window.location.href = '/index_2';
+                        window.location.href = '/';
                     }}
              >
-                交通者数据可视化
+                路况数据可视化
              </button>
         </main>
     )
